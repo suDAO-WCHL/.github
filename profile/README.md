@@ -183,6 +183,7 @@ The World Computer Hacker League 2025 (WCHL 2025) is a four-month global builder
 - Create more plugins to extend DAO Functionality
 - Customize theme for each DAO
 - Add AI to help DAO Creator and Administrator
+- Deploy to Mainnet
 
 <!--
 LOREM IPSUM<img width="1062" height="1062" alt="SUDAO - White" src="https://github.com/user-attachments/assets/4a9045ff-a521-4c90-a48e-89cce11b8898" />
