@@ -10,9 +10,17 @@
 </div>
 <br>
 <h1 align="center">SUDAO</h1>
-<img width="3840" height="2160" alt="image" src="https://github.com/user-attachments/assets/47f4561c-b4e6-4f87-93dc-3a31a929b9d3" />
+
+<div align="center">
+
+[<img width="3840" height="2160" alt="Watch the video" src="https://github.com/user-attachments/assets/47f4561c-b4e6-4f87-93dc-3a31a929b9d3" />](https://youtu.be/xWQHF5wuQVU?si=WW2I8DLNNwjz2Efr)
+
+</div>
+
+
 
 **SUDAO: Easiest DAO Creation**
+
 SUDAO is an all-in-one no-code platform on the Internet Computer (ICP) blockchain for creating and managing decentralized autonomous organizations (DAOs). It enables users to launch a DAO without writing any code, providing built-in community governance tools such as proposal voting and treasury management to facilitate transparent decision-making. The platform includes a open-plugin marketplace for modular extensions, allowing communities to add custom features or integrations to their DAOs as needed. By leveraging ICP’s fully on-chain architecture, SUDAO provides a decentralized foundation for each DAO’s operations and governance, with both application logic and user interface running within the blockchain’s smart contracts
 
 
@@ -41,6 +49,80 @@ Your DAO in SUDAO is not just a tool for your members, it becomes the central hu
 Initial organizers still has control over the management of their DAO without overwhelming with technical complexity. Soon, these roles can be available to delegate to moderators and administrators that helps to run the DAO. With a reliable dashboard, they can focus on nurturing the community to guide governance, finances, and engagement efficiently. 
 
 ## 👨🏻‍💻 &nbsp;Technology Stack
+<!-- simpen logo disini
+<img width="320" height="320" alt="image" src="" />
+<img width="1914" height="1914" alt="image" src="https://github.com/user-attachments/assets/86799519-3b1c-490d-a896-c8456608520e" />
+<img width="2300" height="2047" alt="image" src="https://github.com/user-attachments/assets/a5ff8841-0082-4f07-a1e3-2186a3dc9e41" />
+<img width="1200" height="1183" alt="image" src="https://github.com/user-attachments/assets/2148da34-dce1-4ccc-a0bd-9b5d2647653b" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/6fe72e9e-dba1-4034-95be-d9775c5c5e35" />
+
+<img width="2560" height="1565" alt="image" src="https://github.com/user-attachments/assets/34062e93-2dcb-45c4-bab7-255d66820d3a" />
+<img width="352" height="340" alt="image" src="https://github.com/user-attachments/assets/dbbf28ad-c5f5-4fd9-b446-ac85194d8c13" />
+
+
+
+
+
+
+
+-->
+<div align="center">
+
+  <!-- Internet Computer (ICP) -->
+  <a href="https://internetcomputer.org/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/b304b317-4a28-405c-bfd8-a9764ba3ad16" height="60" alt="Internet Computer (ICP)" />
+    </kbd>
+  </a>
+
+  <!-- Motoko (badge placeholder; replace with your own logo if you have one) -->
+  <a href="https://internetcomputer.org/docs/current/motoko/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/86799519-3b1c-490d-a896-c8456608520e" height="60" alt="Motoko" />
+    </kbd>
+  </a>
+
+  <!-- React -->
+  <a href="https://react.dev/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/a5ff8841-0082-4f07-a1e3-2186a3dc9e41" height="60" alt="React" />
+    </kbd>
+  </a>
+
+  <!-- Vite -->
+  <a href="https://vitejs.dev/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/2148da34-dce1-4ccc-a0bd-9b5d2647653b" height="60" alt="Vite" />
+    </kbd>
+  </a>
+
+  <!-- Tailwind CSS -->
+  <a href="https://tailwindcss.com/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/34062e93-2dcb-45c4-bab7-255d66820d3a" height="60" alt="Tailwind CSS" />
+    </kbd>
+  </a>
+
+  <!-- shadcn/ui (badge placeholder; replace with your own logo if you have one) -->
+  <a href="https://ui.shadcn.com/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/6fe72e9e-dba1-4034-95be-d9775c5c5e35" height="60" alt="shadcn/ui" />
+    </kbd>
+  </a>
+
+  <!-- Framer Motion -->
+  <a href="https://www.framer.com/motion/">
+    <kbd>
+      <img src="https://github.com/user-attachments/assets/dbbf28ad-c5f5-4fd9-b446-ac85194d8c13" height="60" alt="Framer Motion" />
+    </kbd>
+  </a>
+
+</div>
+
+<div align="center">
+  <h4>Internet Computer (ICP) | Motoko | React | Vite | Tailwind CSS | shadcn/ui | Framer Motion</h4>
+</div>
+
 
 ## 🛠️ &nbsp;System Architecture
 
