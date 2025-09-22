@@ -49,23 +49,6 @@ Your DAO in SUDAO is not just a tool for your members, it becomes the central hu
 Initial organizers still has control over the management of their DAO without overwhelming with technical complexity. Soon, these roles can be available to delegate to moderators and administrators that helps to run the DAO. With a reliable dashboard, they can focus on nurturing the community to guide governance, finances, and engagement efficiently. 
 
 ## 👨🏻‍💻 &nbsp;Technology Stack
-<!-- simpen logo disini
-<img width="320" height="320" alt="image" src="" />
-<img width="1914" height="1914" alt="image" src="https://github.com/user-attachments/assets/86799519-3b1c-490d-a896-c8456608520e" />
-<img width="2300" height="2047" alt="image" src="https://github.com/user-attachments/assets/a5ff8841-0082-4f07-a1e3-2186a3dc9e41" />
-<img width="1200" height="1183" alt="image" src="https://github.com/user-attachments/assets/2148da34-dce1-4ccc-a0bd-9b5d2647653b" />
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/6fe72e9e-dba1-4034-95be-d9775c5c5e35" />
-
-<img width="2560" height="1565" alt="image" src="https://github.com/user-attachments/assets/34062e93-2dcb-45c4-bab7-255d66820d3a" />
-<img width="352" height="340" alt="image" src="https://github.com/user-attachments/assets/dbbf28ad-c5f5-4fd9-b446-ac85194d8c13" />
-
-
-
-
-
-
-
--->
 <div align="center">
 
   <!-- Internet Computer (ICP) -->
@@ -125,6 +108,48 @@ Initial organizers still has control over the management of their DAO without ov
 
 
 ## 🛠️ &nbsp;System Architecture
+
+### DAO Creation
+Our DAO helps people to govern their community. At a glance, DAO Creation follows this sequence described by the diagram.
+>💡
+>*Steps 2-4 runs asynchronously so the DAO ID is returned immediately after step 1; The actor can fetch DAO information + deployment status afterward.*
+
+<img width="3632" height="1084" alt="image" src="https://github.com/user-attachments/assets/d5c64468-cb56-4929-b4b4-d4ade620b956" />
+
+#### 1. Immediate DAO ID Assignment & Progress Feedback
+When a user submits the DAO creation form, the frontend immediately receives a ```dao_id``` from the backend (factory canister). 🌟 **Purpose**: This allows the UI to show progress and status updates, even while the actual canister deployment and initialization are still running asynchronously.
+
+#### 2. Canister Creation via Factory (Explorer)
+The DAO Factory (Explorer) is responsible for orchestrating the creation of all required canisters. The factory calls Internet Computer (IC) management APIs to create three separate canisters:
+- **Governance Canister:** Manages proposals, voting, and DAO logic.
+- **AMM Canister:** Handles automated market making and liquidity.
+- **Token/Ledger Canister:** Manages the DAO’s token and ledger operations.
+  
+#### 3. Code Installation
+After the canisters are created, the factory installs the appropriate code (WASM modules) into each canister.
+
+#### 4. Canister Initialization 
+The factory then initializes each canister:
+- **Governance:** Sets up initial DAO parameters.
+- **AMM:** Prepares liquidity pools and trading logic.
+- **Token/Ledger:** Mints the initial supply of tokens.
+    
+The Token/Ledger canister performs an initial mint, sending tokens directly to the AMM canister.
+
+#### 5. Asynchronous Completion & Status Polling
+Asynchronous operations and status updates are managed in Motoko backend files, with progress exposed via canister methods.
+
+### Plugins 
+In SUDAO, plugins are modular extensions that add or modify the functionality of a DAO. Every core feature—including proposals—is delivered as a plugin, ensuring the system stays lightweight and flexible. Communities can install published plugins directly to extend their DAO and developers can build and publish new ones to be shared or sold in the marketplace. This structure allows anyone to integrate governance tools, analytics, or community apps with a simple installation, while giving creators the ability to monetize their contributions.
+
+> ⚠️ WIP
+> This is still ongoing and the dev are working very hard to integrate this. Please wait for official structure T____T
+
+## 🌐 &nbsp; WCHL 2025
+
+
+
+
 
 
 <!--
