@@ -145,12 +145,44 @@ In SUDAO, plugins are modular extensions that add or modify the functionality of
 > ⚠️ WIP
 > This is still ongoing and the dev are working very hard to integrate this. Please wait for official structure T____T
 
+<img width="418" height="420" alt="image" src="https://github.com/user-attachments/assets/a48af71c-ad80-4ada-aeda-dab35f608ee9" />
+
+#### 1. Plugin creation
+This is when a developer wanted to code a new plugin. They run ```sudao new <project>```. This generates a ```sudao.json``` template metadata that contains something like:
+
+```
+{
+  "name": "plugin",
+  "version": "1.0.0",
+  "creator": "abcd"
+}
+```
+
+It also defines plugins specific routes/components.
+
+```
+{
+  "routes": [
+    { "path": "/analytics", "component": "Dashboard" },
+    { "path": "/analytics/reports", "component": "Reports" }
+  ]
+}
+```
+
+#### 2. Plugin Bundling and Publishing
+Once the plugin logic and UI are implemented, it is packaged into a Plugin Bundle. This bundle is the distributable format that can be uploaded and shared through the registry. The bundled plugin is then published into the Plugin Registry. The registry acts as a central hub, storing plugin metadata, versions, and references, similar to an app store.
+
+#### 3. Plugin Retrieval by DAOs
+When an individual DAO needs a plugin, its frontend calls ```getPlugin()``` to fetch the required plugins from the registry. The registry returns URLs or references that allow the DAO to dynamically load and use the plugin. Finally, the DAO frontend integrates the retrieved plugin into its interface. This allows the community to instantly extend DAO functionality (e.g., dashboards, analytics, reports) without changing the DAO’s core.
+
+
 ## 🌐 &nbsp; WCHL 2025
+The World Computer Hacker League 2025 (WCHL 2025) is a four-month global builder competition on the Internet Computer Protocol (ICP), bringing together thousands of developers, hackers, and innovators to create mainnet-ready applications across categories such as AI, Bitcoin DeFi, fully on-chain apps, and real-world assets.
 
-
-
-
-
+### Future Roadmap 
+- Create more plugins to extend DAO Functionality
+- Customize theme for each DAO
+- Add AI to help DAO Creator and Administrator
 
 <!--
 LOREM IPSUM<img width="1062" height="1062" alt="SUDAO - White" src="https://github.com/user-attachments/assets/4a9045ff-a521-4c90-a48e-89cce11b8898" />
